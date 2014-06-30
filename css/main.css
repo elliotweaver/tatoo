@@ -73,6 +73,7 @@ a.navbar-brand {
   color: #9b9b9b;
   font-size: 22px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .page-about a {
   color: #ff613d;
@@ -98,6 +99,7 @@ a.navbar-brand {
 .page-gallery .item  {
   width: 20%;
   background: #FFF;
+  cursor: pointer;
 }
 .page-gallery .item.t {
   width: 15%;
@@ -120,6 +122,51 @@ a.navbar-brand {
 .page-gallery .item img:hover {
   opacity: 1;
 }
+.page-gallery .pop {
+  visibility: hidden;
+  position: fixed;
+  top: -1000px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 99999999;
+  opacity: 1;
+  padding: 20px;
+  background: url("../img/StoreBG.jpg") no-repeat scroll center center transparent;
+  text-align: center;
+  background-size: cover;
+}
+.page-gallery .pop .close {
+  color: #FFF;
+  opacity: .4;
+  font-size: 60px;
+  text-shadow: 0 0 transparent;
+  font-family: helvetica-light;
+  font-weight: normal;
+  border: 1px solid #FFF;
+  margin: 0;
+  padding: 0;
+  line-height: 49px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #000;
+}
+.page-gallery .pop .close:hover {
+  opacity: 1;
+}
+.page-gallery .item .pop img {
+  opacity: 1;
+  max-height: 100%;
+  max-width: 100%;
+}
+.page-gallery .active {
+  visibility: visible;
+}
 
 /* Store */
 .page-store {
@@ -139,6 +186,9 @@ a.navbar-brand {
 }
 .page-store a {
   color: #ff613d;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
 }
 .page-store .wrap img {
   opacity: 0.3;
@@ -169,14 +219,43 @@ a.navbar-brand {
   font-size: 22px;
   line-height: 28px;
   margin-top: 10px;
+  margin-bottom: 40px;
 }
 .page-contact h3 {
   color: #ff613d;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 2px;
 }
 .page-contact p {
   color: #fff;
   text-align: center;
   font-size: 22px;
+  margin-bottom: 30px;
+}
+.page-contact hr {
+  margin: 120px 0;
+  border: medium none;
+}
+.page-contact span {
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 22px;
+  line-height: 80px;
+}
+.page-contact span a {
+  margin-left: 10px;
+  background: url(../img/InstagramIcon.png) no-repeat scroll 0px 12px transparent;
+  width: 61px;
+  height: 74px;
+  display: inline-block;
+}
+.page-contact span a:hover {
+  margin-left: 10px;
+  background: url(../img/InstagramIcon_downState.png) no-repeat scroll 0px 12px transparent;
+  width: 61px;
+  height: 74px;
+  display: inline-block;
 }
 
 
