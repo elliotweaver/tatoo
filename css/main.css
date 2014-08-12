@@ -52,7 +52,7 @@ a.navbar-brand {
 
 /* Hero */
 .page-hero {
-  background: url("../img/HeroPicture.jpg") no-repeat scroll center center transparent;
+  background: url("../img/HeroPicture2.jpg") no-repeat scroll center center transparent;
   background-size: cover;
   min-height: 620px;
   margin-bottom: 0;
@@ -132,29 +132,30 @@ a.navbar-brand {
   z-index: 99999999;
   opacity: 1;
   padding: 20px;
-  background: url("../img/StoreBG.jpg") no-repeat scroll center center transparent;
+  background: #384148;
   text-align: center;
   background-size: cover;
 }
 .page-gallery .pop .close {
-  color: #FFF;
+  color: #555;
   opacity: .4;
-  font-size: 60px;
+  font-size: 30px;
   text-shadow: 0 0 transparent;
   font-family: helvetica-light;
   font-weight: normal;
   border: 1px solid #FFF;
   margin: 0;
   padding: 0;
-  line-height: 49px;
+  line-height: 23px;
   display: inline-block;
-  height: 60px;
-  width: 60px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #000;
+  bottom: 10px;
+  right: 10px;
+  background: #FFF;
+  border-radius: 3px;
 }
 .page-gallery .pop .close:hover {
   opacity: 1;
@@ -163,6 +164,7 @@ a.navbar-brand {
   opacity: 1;
   max-height: 100%;
   max-width: 100%;
+  border-radius: 3px;
 }
 .page-gallery .active {
   visibility: visible;
@@ -206,7 +208,7 @@ a.navbar-brand {
 .page-contact {
   background: url("../img/ContactBG.jpg") no-repeat scroll center center transparent;
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
 }
 .page-contact h1 {
   color: #ffffff;
@@ -230,7 +232,7 @@ a.navbar-brand {
   color: #fff;
   text-align: center;
   font-size: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .page-contact hr {
   margin: 120px 0;
@@ -257,6 +259,21 @@ a.navbar-brand {
   height: 74px;
   display: inline-block;
 }
+.page-contact h2 a {
+  color: #ff613d;
+}
+.page-contact h2 a:hover {
+  color: #ff613d;
+}
+footer {
+  margin-bottom: 50px;
+}
+
+.pop {
+  transition: all 0.3s;
+  border-radius: 3px;
+  border: 2px solid #000;
+}
 
 
 /* ==========================================================================
@@ -264,5 +281,9 @@ a.navbar-brand {
    ========================================================================== */
 
 @media (max-width: 768px){
+
+  footer {
+    margin-bottom: 100px;
+  }
 
 }
