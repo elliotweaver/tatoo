@@ -11,6 +11,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 300;
+  background: #000;
 }
 h1,h2,h3 {
   font-family: 'Ledger', serif;
@@ -52,10 +53,11 @@ a.navbar-brand {
 
 /* Hero */
 .page-hero {
-  background: url("../img/HeroPicture2.jpg") no-repeat scroll center center transparent;
+  background: url("../img/HeroPicture2.jpg") no-repeat scroll center center #000;
   background-size: cover;
   min-height: 620px;
-  margin-bottom: 0;
+  max-width: 1380px;
+  margin: 0 auto;
 }
 
 /* About */
@@ -97,22 +99,33 @@ a.navbar-brand {
   margin-bottom: 50px;
 }
 .page-gallery .item  {
-  width: 20%;
+  width: 259px !important;
+  height: 259px !important;
+  overflow: hidden;
   background: #FFF;
   cursor: pointer;
 }
 .page-gallery .item.t {
-  width: 15%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
 }
 .page-gallery .item.s {
-  width: 20%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
 }
 .page-gallery .item.w {
-  width: 25%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
 }
 .page-gallery .item img {
   max-width: 100%;
-  opacity: .5;
+  opacity: 1;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
   transition: all .5s;
   -ms-transition: all .5s;
   -o-transition: all .5s;
@@ -121,6 +134,9 @@ a.navbar-brand {
 }
 .page-gallery .item img:hover {
   opacity: 1;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 .page-gallery .pop {
   visibility: hidden;
@@ -206,7 +222,7 @@ a.navbar-brand {
 
 /* Contact */
 .page-contact {
-  background: url("../img/ContactBG.jpg") no-repeat scroll center center transparent;
+  background: url("../img/ContactBG2.png") no-repeat scroll center center transparent;
   background-size: cover;
   padding-bottom: 0px;
 }
@@ -244,6 +260,8 @@ a.navbar-brand {
   display: block;
   font-size: 22px;
   line-height: 80px;
+  background: rgba(0,0,0,.5);
+  padding: 10px 0;
 }
 .page-contact span a {
   margin-left: 10px;
@@ -266,7 +284,7 @@ a.navbar-brand {
   color: #ff613d;
 }
 footer {
-  margin-bottom: 50px;
+
 }
 
 .pop {
@@ -280,10 +298,3 @@ footer {
    Media Queries
    ========================================================================== */
 
-@media (max-width: 768px){
-
-  footer {
-    margin-bottom: 100px;
-  }
-
-}
