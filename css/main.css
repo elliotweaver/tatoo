@@ -181,6 +181,9 @@ a.navbar-brand {
   max-height: 100%;
   max-width: 100%;
   border-radius: 3px;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 .page-gallery .active {
   visibility: visible;
@@ -209,14 +212,6 @@ a.navbar-brand {
   margin-bottom: 20px;
 }
 .page-store .wrap img {
-  opacity: 0.3;
-  transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-}
-.page-store .wrap img:hover {
   opacity: 1;
 }
 
